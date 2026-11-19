@@ -8,9 +8,6 @@ const dotsContainer = document.getElementById('dots');
 let currentSlide = 0;
 const totalSlides = slides.length;
 
- 
-
-
 slides.forEach((slide, index) => {
     const dot = document.createElement('button');
 
@@ -25,8 +22,6 @@ slides.forEach((slide, index) => {
 });
 
 const dots = document.querySelectorAll('.dot');
-
-
 
 function showSlide(index) {
 
@@ -56,17 +51,13 @@ function showSlide(index) {
     nextButton.disabled = currentSlide === totalSlides - 1;
 }
 
-
-
 nextButton.addEventListener('click', function() {
     showSlide(currentSlide + 1);
 });
 
-
 prevButton.addEventListener('click', function() {
     showSlide(currentSlide - 1);
 });
-
 
 document.addEventListener('keydown', function(event) {
 
@@ -79,6 +70,5 @@ document.addEventListener('keydown', function(event) {
     }
 
 });
-
 
 showSlide(0);
