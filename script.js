@@ -8,7 +8,9 @@ const dotsContainer = document.getElementById('dots');
 let currentSlide = 0;
 const totalSlides = slides.length;
 
-// Crear puntos de navegación
+ 
+
+
 slides.forEach((slide, index) => {
     const dot = document.createElement('button');
 
@@ -24,7 +26,8 @@ slides.forEach((slide, index) => {
 
 const dots = document.querySelectorAll('.dot');
 
-// Mostrar diapositivas
+
+
 function showSlide(index) {
 
     if (index < 0 || index >= totalSlides) {
@@ -53,17 +56,18 @@ function showSlide(index) {
     nextButton.disabled = currentSlide === totalSlides - 1;
 }
 
-// Botón SIGUIENTE
+
+
 nextButton.addEventListener('click', function() {
     showSlide(currentSlide + 1);
 });
 
-// Botón ANTERIOR
+
 prevButton.addEventListener('click', function() {
     showSlide(currentSlide - 1);
 });
 
-// Teclas del teclado
+
 document.addEventListener('keydown', function(event) {
 
     if (event.key === 'ArrowRight') {
@@ -76,5 +80,5 @@ document.addEventListener('keydown', function(event) {
 
 });
 
-// Iniciar presentación
+
 showSlide(0);
