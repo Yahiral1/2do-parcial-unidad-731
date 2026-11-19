@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --red: #a82735;
+  --red: #a82727;
   --red-light: #e04b57;
   --background: #16090b;
   --panel: #260e12;
-  --text: #f5eeee;
+  --text: #e2dada;
   --muted: #c4aeb0;
 }
 
@@ -30,10 +30,10 @@ body {
   max-width: 900px;
   margin: auto;
   padding: 30px;
-  background: rgba(32, 10, 14, 0.96);
-  border: 1px solid #68232d;
+  background: rgba(241, 4, 4, 0.452);
+  border: 1px solid #000000;
   border-radius: 12px;
-  box-shadow: 0 15px 55px rgba(0,0,0,.55);
+  box-shadow: 0 15px 55px rgba(13, 1, 1, 0.55);
 }
 
 .topbar {
@@ -104,7 +104,7 @@ h1 span {
 }
 
 h2 {
-  color: #fff;
+  color: #e8f0e9;
   font-family: 'Cinzel', serif;
   font-size: clamp(25px, 5vw, 38px);
   line-height: 1.25;
@@ -112,7 +112,7 @@ h2 {
 }
 
 h3 {
-  color: #f16b75;
+  color: #e21414;
   font-family: 'Cinzel', serif;
   font-size: 23px;
   margin: 25px 0 13px;
@@ -130,7 +130,7 @@ h3 {
   display: block;
   width: 100%;
   height: auto;
-  max-height: none;
+  max-width: 100%;
   object-fit: contain;
   border-radius: 5px;
   border: 1px solid #79313b;
@@ -157,10 +157,10 @@ h3 {
 
 .controls button {
   padding: 12px 17px;
-  color: white;
-  background: #8f202d;
-  border: 1px solid #bc4651;
-  border-radius: 5px;
+  color: rgb(230, 16, 16);
+  background: #b50f30;
+  border: 1px solid #e6ebe5;
+  border-radius: 20px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -169,7 +169,7 @@ h3 {
 }
 
 .controls button:hover:not(:disabled) {
-  background: #c43746;
+  background: #37c448;
   transform: translateY(-2px);
 }
 
@@ -223,7 +223,10 @@ h3 {
   }
 
   .slide img {
-    max-height: 250px;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
   }
 
   .slide p {
